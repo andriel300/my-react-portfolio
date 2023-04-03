@@ -26,9 +26,13 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Nisi hic impedit
-            officia.
+            I am a skilled full-stack web developer with experience in building
+            responsive and user-friendly websites. I have a strong command of
+            JavaScript, React, Node.js, and Express, as well as experience with
+            databases like PostgreSQL and MongoDB. I have developed multiple web
+            applications, including a social media platform, admin dashboards
+            and an e-commerce website. I am always eager to learn and stay
+            up-to-date with the latest web development trends and technologies.
           </p>
         </motion.div>
         <div className="mt-16 md:mt-0">
@@ -78,10 +82,10 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repellendus rem voluptatem illum, dolor vel, animi quaerat tempora
-            itaque doloribus accusantium voluptates iusto ducimus fugiat eum
-            perspiciatis non? Cumque, assumenda numquam!
+            I have developed and deployed several responsive and scalable web
+            applications that deliver a seamless user experience. With my solid
+            understanding of front-end and back-end technologies, I am able to
+            build efficient and secure web applications from scratch.
           </p>
         </motion.div>
 
@@ -107,12 +111,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Ullamco ex commodo eiusmod magna incididunt adipisicing. Cillum
-            officia aute amet labore reprehenderit nostrud veniam aute duis
-            veniam consequat adipisicing. Do aliquip sunt voluptate sunt enim
-            duis elit non. Pariatur occaecat commodo laboris dolore. Veniam
-            veniam laborum mollit proident fugiat exercitation. Aliqua ipsum non
-            officia nisi dolore dolor Lorem labore reprehenderit pariatur.
+            strong passion for innovation and creativity, and am always looking
+            for new ways to solve complex problems.
           </p>
         </motion.div>
 
@@ -138,10 +138,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Fugiat ullamco do enim pariatur culpa adipisicing consectetur est
-            reprehenderit et est. Deserunt amet occaecat tempor laboris aliquip.
-            Aute minim anim aliquip nulla non non. In et minim aliqua deserunt
-            ut nisi ipsum sunt.
+            I bring a creative and imaginative approach to my work. I am
+            passionate about creating visually appealing and intuitive user
+            interfaces that engage users and deliver a seamless user experience.
           </p>
         </motion.div>
       </div>

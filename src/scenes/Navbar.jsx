@@ -67,10 +67,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-gradient-rainblue w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              <button
+                className="rounded-full bg-red p-2"
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+              >
                 <img alt="close-icon" src="../assets/close-icon.svg" />
               </button>
             </div>
@@ -92,11 +95,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
+              {/* <Link
                 page="Testimonials"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
-              />
+              /> */}
               <Link
                 page="Contact"
                 selectedPage={selectedPage}
