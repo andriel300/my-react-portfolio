@@ -3,7 +3,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
-import Testimonials from "./scenes/Testimonials";
+// import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import { useState, useEffect } from "react";
@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -49,9 +49,9 @@ function App() {
         <Projects />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      {/* <div className="w-5/6 mx-auto md:h-full">
         <Testimonials />
-      </div>
+      </div> */}
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <Contact />
