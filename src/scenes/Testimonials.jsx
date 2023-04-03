@@ -19,7 +19,7 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair font-semibold text-4xl mb-5 text-orange">
           TESTIMONIALS
         </p>
         <LineGradient width="mx-auto w-2/5" />
@@ -45,8 +45,7 @@ const Testimonials = () => {
           <p className="font-playfair text-6xl">"</p>
           <p className="text-center text-xl">
             Commodo deserunt incididunt consequat culpa occaecat. In ut veniam
-            eu consectetur id qui pariatur id dolore reprehenderit consequat
-            culpa.
+            eu.
           </p>
         </motion.div>
         <motion.div
@@ -63,7 +62,7 @@ const Testimonials = () => {
           <p className="font-playfair text-6xl">"</p>
           <p className="text-center text-xl">
             Voluptate in consequat aliquip magna non magna. Officia anim velit
-            nulla dolore proident culpa.
+            nulla.
           </p>
         </motion.div>
         <motion.div

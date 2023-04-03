@@ -5,6 +5,17 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Landing = ({ setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
+
+  // Define the animation for the image
+  const imageAnimation = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   return (
     <section
       id="home"
@@ -18,18 +29,22 @@ const Landing = ({ setSelectedPage }) => {
               before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full
               before:border-2 before:border-blue before:z-[-1]"
           >
-            <img
+            {/* Wrap the image in a motion component */}
+            <motion.img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-            max-w-[400px] md:max-w-[600px]"
+              max-w-[300px] md:max-w-[500px]"
               src="../assets/profile-image.png"
+              variants={imageAnimation} // Apply the animation
+              initial="hidden"
+              animate="visible"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-            max-w-[400px] md:max-w-[600px]"
+            max-w-[300px] md:max-w-[500px]"
             src="../assets/profile-image.png"
           />
         )}
@@ -78,7 +93,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-            hover:bg-blue hover:text-white transition duration-500"
+            hover:bg-blue hover:text-dark-grey transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -89,7 +104,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
+            <div className="bg-deep-blue text-white hover:text-blue transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               Let's talk.
             </div>
           </AnchorLink>
