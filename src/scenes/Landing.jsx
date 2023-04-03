@@ -8,11 +8,12 @@ const Landing = ({ setSelectedPage }) => {
 
   // Define the animation for the image
   const imageAnimation = {
-    hidden: { scale: 0, opacity: 0 },
+    hidden: { opacity: 0, scale: 0.5 },
     visible: {
+      x: [0, 150, 50],
       scale: 1,
       opacity: 1,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.5, delay: 0.3, ease: [0.5, 0.71, 1, 1.01] },
     },
   };
 
