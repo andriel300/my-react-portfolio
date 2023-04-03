@@ -9,16 +9,23 @@ module.exports = {
         blue: "#2CBCE9",
         red: "#DC4492",
         yellow: "#FDCC49",
+        orange: "#FF7E00",
         grey: "#ededed",
+        roxo: "#7f5af0",
+        tertiary: "#2cb67d",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        rainblue:
+          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
-
+          // "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
         "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+          // "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
+        "gradient-blueing": "linear-gradient(90deg, #4481eb 10%, #04befe 90%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
