@@ -30,7 +30,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="h-64 bg-blue pt-10"
+      className="h-64 bg-deep-blue pt-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
