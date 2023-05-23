@@ -3,13 +3,13 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import SkillsIcons from "../components/SkillsIcons";
 import Particles from "../components/Particles";
+import AnimatedText from "../components/AnimatedText";
 
 const MySkills = () => {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
   return (
     <section id="skills" className="pt-10 pb-24">
-      <Particles />
       {/* HEADER AND IMAGE SECTION */}
 
       <div className="md:flex md:justify-between md:gap-16 mt-32">
@@ -24,13 +24,14 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+          <Particles />
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-orange">SKILLS</span>
           </p>
-          <LineGradient width="w-1/3" />
+          <LineGradient width="w-xl" />
           <SkillsIcons />
-          <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
+          <LineGradient width="w-xl" />
+          {/* <p className="text-xl mt-10 mb-7">
             I am a skilled full-stack web developer with experience in building
             responsive and user-friendly websites. I have a strong command of
             JavaScript, React, Node.js, and Express, as well as experience with
@@ -38,7 +39,12 @@ const MySkills = () => {
             applications, including a social media platform, admin dashboards
             and an e-commerce website. I am always eager to learn and stay
             up-to-date with the latest web development trends and technologies.
-          </p>
+          </p> */}
+          <AnimatedText
+            text="I am a skilled full-stack web developer with experience in building responsive and user-friendly websites. I have a strong command of JavaScript, React, Node.js, and Express, as well as experience with databases like PostgreSQL and MongoDB. I have developed multiple web applications, including a social media platform, admin dashboards and an e-commerce website. I am always eager to learn and stay up-to-date with the latest web development trends and technologies.
+"
+            className="!text-left"
+          />
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isDesktop ? (
