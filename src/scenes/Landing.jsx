@@ -1,7 +1,11 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unescaped-entities */
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import AnimatedText from "../components/AnimatedText";
+import { LinkArrow } from "../components/Icons";
 
 const Landing = ({ setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
@@ -45,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
           <img
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-            max-w-[300px] md:max-w-[500px]"
+              max-w-[300px] md:max-w-[500px]"
             src="../assets/profile-image.png"
           />
         )}
@@ -64,20 +68,19 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Hi! I am Andriel {""}
+            ANDRIEL
             <span
-              className="xs:relative xs:text-deep-blue xs-font-semibold pl-12 z-20
+              className="xs:relative xs:text-deep-blue xs-font-semibold z-20
               xs:before:content-brush before:absolute before:-left-[25px]
-              before:-top-[70px] before:z-[-1] "
+              before:-top-[75px] before:z-[-1]"
             >
-              José
+              JOSÉ
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            I am a full-stack web developer wih a self-motivated individual with
-            strong problem-solving skills and a positive attitude that helps me
-            tackle challenges with a creative and proactive approach.
-          </p>
+          <AnimatedText
+            text="I am a full-stack web developer wih a self-motivated individual with strong problem-solving skills and a positive attitude that helps me tackle challenges with a creative and proactive approach."
+            className="!text-left"
+          />
         </motion.div>
 
         {/* CALL TO ACTIONS */}
@@ -93,8 +96,9 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-            hover:bg-blue hover:text-dark-grey transition duration-500"
+            className="bg-gradient-rainblue text-deep-blue
+            rounded-sm py-3 px-7 font-semibold transition duration-500
+            hover:bg-deep-blue hover:text-blue focus:outline-none"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -122,7 +126,22 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SocialMediaIcons />
+          <div>
+            <SocialMediaIcons />
+          </div>
+          <div className="flex items-center self-start mt-2">
+            <a
+              className="flex items-center bg-black text-white
+              p-2.5 px-6 m-5 rounded-lg text-lg font-semibold
+               hover:bg-white hover:text-black border-3
+               border-solid border-transparent hover:border-black"
+              href="/public/dummy.pdf"
+              target="_blank"
+              download={true}
+            >
+              Resume <LinkArrow className={"w-6 ml-1"} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
