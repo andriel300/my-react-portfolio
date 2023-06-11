@@ -25,35 +25,43 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="app bg-background dark:bg-dark">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
-        {isDesktop && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )}
-        <Landing setSelectedPage={setSelectedPage} />
+      <div className="bg-background dark:bg-dark">
+        <div className="w-5/6 mx-auto md:h-full">
+          {isDesktop && (
+            <DotGroup
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          )}
+          <Landing setSelectedPage={setSelectedPage} />
+        </div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
-        <MySkills />
+      <div className="bg-background dark:bg-dark">
+        <div className="w-5/6 mx-auto ">
+          <MySkills />
+        </div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
-        <Projects />
+      <div className="bg-background dark:bg-dark">
+        <div className="w-5/6 mx-auto">
+          <Projects />
+        </div>
       </div>
-      {/* <div className="w-5/6 mx-auto md:h-full">
+      {/* <div className="w-full mx-auto md:h-full">
         <Testimonials />
       </div> */}
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <Contact />
+      <div className="bg-background dark:bg-dark">
+        <div className="w-5/6 mx-auto md:h-full ">
+          <Contact />
+        </div>
       </div>
       <Footer />
     </div>
