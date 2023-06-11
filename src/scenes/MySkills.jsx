@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import SkillsIcons from "../components/SkillsIcons";
-import Particles from "../components/Particles";
+import ParticlesComponent from "../components/Particles";
 import AnimatedText from "../components/AnimatedText";
 
 const MySkills = () => {
@@ -24,8 +24,7 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Particles />
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-playfair font-semibold text-4xl mb-5 dark:text-white">
             MY <span className="text-orange">SKILLS</span>
           </p>
           <LineGradient width="w-xl" />
@@ -41,10 +40,10 @@ const MySkills = () => {
             up-to-date with the latest web development trends and technologies.
           </p> */}
           <AnimatedText
-            text="I am a skilled full-stack web developer with experience in building responsive and user-friendly websites. I have a strong command of JavaScript, React, Node.js, and Express, as well as experience with databases like PostgreSQL and MongoDB. I have developed multiple web applications, including a social media platform, admin dashboards and an e-commerce website. I am always eager to learn and stay up-to-date with the latest web development trends and technologies.
-"
-            className="!text-left"
+            text="I am a skilled full-stack web developer with experience in building responsive and user-friendly websites. I have a strong command of JavaScript, React, Node.js, and Express, as well as experience with databases like PostgreSQL and MongoDB. I have developed multiple web applications, including a social media platform, admin dashboards and an e-commerce website. I am always eager to learn and stay up-to-date with the latest web development trends and technologies."
+            className="text-black-text dark:text-white font-medium mt-10 mb-7 text-sm xs:text-md sm:text-lg md:text-xl  text-center md:text-start"
           />
+          <ParticlesComponent />
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isDesktop ? (
@@ -84,15 +83,17 @@ const MySkills = () => {
           }}
         >
           <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-3xl mt-3">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+            <div className="z-10 relative">
+              <p className="font-playfair font-semibold text-3xl mt-3 dark:text-white">
+                01
+              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3 dark:text-white relative z-20">
                 Experience
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-blue dark:bg-blue absolute right-0 top-0 z-0" />
           </div>
-          <p className="mt-5">
+          <p className="mt-5 dark:text-white">
             I have developed and deployed several responsive and scalable web
             applications that deliver a seamless user experience. With my solid
             understanding of front-end and back-end technologies, I am able to
@@ -113,16 +114,18 @@ const MySkills = () => {
           }}
         >
           <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+            <div className="z-10 relative">
+              <p className="font-playfair font-semibold text-5xl dark:text-white">
+                02
+              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3 dark:text-white relative z-20">
                 Innovate
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-red dark:bg-red absolute right-0 top-0 z-0" />
           </div>
-          <p className="mt-5">
-            strong passion for innovation and creativity, and am always looking
+          <p className="mt-5 dark:text-white">
+            Strong passion for innovation and creativity, and am always looking
             for new ways to solve complex problems.
           </p>
         </motion.div>
@@ -140,15 +143,17 @@ const MySkills = () => {
           }}
         >
           <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+            <div className="z-10 relative">
+              <p className="font-playfair font-semibold text-5xl dark:text-white">
+                03
+              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3 dark:text-white relative z-20">
                 Imaginative
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-yellow dark:bg-yellow absolute right-0 top-0 z-0" />
           </div>
-          <p className="mt-5">
+          <p className="mt-5 dark:text-white">
             I bring a creative and imaginative approach to my work. I am
             passionate about creating visually appealing and intuitive user
             interfaces that engage users and deliver a seamless user experience.
