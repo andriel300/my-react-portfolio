@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import AnimatedText from "../components/AnimatedText";
 import { LinkArrow } from "../components/Icons";
+import { TypeAnimation } from "react-type-animation";
 
 const Landing = ({ setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width: 1060px)");
@@ -67,7 +68,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl dark:text-white font-playfair z-10 text-center md:text-start">
             ANDRIEL
             <span
               className="xs:relative xs:text-deep-blue xs-font-semibold z-20
@@ -77,9 +78,26 @@ const Landing = ({ setSelectedPage }) => {
               JOSÉ
             </span>
           </p>
+
           <AnimatedText
+            className="text-black-text dark:text-white font-medium mt-10 mb-7 text-base text-center md:text-start"
             text="I am a full-stack web developer wih a self-motivated individual with strong problem-solving skills and a positive attitude that helps me tackle challenges with a creative and proactive approach."
-            className="!text-left"
+          />
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              "I'm a Coder",
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              "I'm a Tech Enthusiast ",
+              1000,
+              "I'm a Full-Stack Web Developer",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            className="text-black-text dark:text-white"
+            style={{ fontSize: "2em", display: "inline-block" }}
+            repeat={Infinity}
           />
         </motion.div>
 
@@ -96,16 +114,16 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue
+            className="bg-gradient-rainbow text-deep-blue
             rounded-sm py-3 px-7 font-semibold transition duration-500
-            hover:bg-deep-blue hover:text-blue focus:outline-none"
+            hover:translate-x-2 focus:outline-none"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-gradient-rainbow py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
@@ -126,15 +144,11 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div>
-            <SocialMediaIcons />
-          </div>
-          <div className="flex items-center self-start mt-2">
+          <div className="flex items-center self-start lg:self-center mt-2">
+            <SocialMediaIcons isLanding={true} />
             <a
-              className="flex items-center bg-black text-white
-              p-2.5 px-6 m-5 rounded-lg text-lg font-semibold
-               hover:bg-white hover:text-black border-3
-               border-solid border-transparent hover:border-black"
+              className="flex items-center rounded-lg border-2 border-solid bg-black
+              p-2.5 px-6 m-5 text-lg font-semibold capitalize text-white hover:border-black hover:bg-transparent hover:text-black dark:bg-white dark:text-black dark:hover:border-white dark:hover:bg-black dark:hover:text-white md:p-2 md:px-4 md:text-base"
               href="/public/dummy.pdf"
               target="_blank"
               download={true}
