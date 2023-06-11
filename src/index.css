@@ -4,11 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import-normalize; /* bring in normalize.css styles */
+
+/* rest of app styles */
+
 html,
 body,
 #root,
 .app {
+  margin: 0;
+  padding: 0;
   height: 100%;
-  background-color: #16161a;
-  @apply text-white;
+  /* background-color: #16161a; */
 }
