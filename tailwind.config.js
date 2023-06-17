@@ -2,32 +2,61 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,jsx,ts,tsx}"],
   mode: "jit",
+  darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        "deep-blue": "#010026",
-        black: "#000",
-        white: "#fff",
-        blue: "#2CBCE9",
-        red: "#DC4492",
-        yellow: "#FDCC49",
-        orange: "#FF7E00",
-        grey: "#ededed",
-        roxo: "#7f5af0",
-        tertiary: "#2cb67d",
-        "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)",
-        rainblue:
-          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+        "2xl": "1920px", // Add an additional breakpoint for larger screens
       },
+      colors: {
+        // your light mode styles here
+        "black-text": "#010403",
+        background: "#fff",
+        "primary-button": "#31c495",
+        "secondary-button": "#2a0b3c",
+        accent: "#2caf86",
+
+        // ... existing colors ...
+        "deep-blue": "#010026",
+
+        // Override existing colors for dark mode:
+        dark: "#16161a",
+        white: "#fff",
+        black: "#000",
+        roxo: "#7f5af0",
+
+        // Skills set colors
+        red: "#DC4492",
+        blue: "#2CBCE9",
+        orange: "#FF7E00",
+        yellow: "#FDCC49",
+
+        grey: "#ededed",
+        tertiary: "#2cb67d",
+
+        // Navbar colors
+        navbar: "hsla(0, 0%, 100%, 0.1)",
+        // DotGroup
+        "dark-grey": "#757575",
+
+        // Form text
+        "opaque-white": "rgba(255, 255, 255, 0.35)",
+        "opaque-black": "rgba(0,0,0,0.35)",
+      },
+
+      // Button on footer and line gradient
       backgroundImage: (theme) => ({
         "gradient-rainbow":
-          // "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
-          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
-        "gradient-rainblue":
-          // "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
           "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
         "gradient-blueing": "linear-gradient(90deg, #4481eb 10%, #04befe 90%)",
+        "gradient-rainblue":
+          "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
@@ -40,14 +69,6 @@ module.exports = {
         person3: "url('./assets/person-3.png')",
       },
     },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
-    },
+    plugins: [],
   },
-  plugins: [],
 };

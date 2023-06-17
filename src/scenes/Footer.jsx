@@ -40,13 +40,13 @@ const Footer = () => {
           className="flex justify-center md:justify-between text-center"
           variants={iconVariants}
         >
-          <SocialMediaIcons />
+          <SocialMediaIcons isLanding={false} />
         </motion.div>
         <motion.div
           className="md:flex justify-center md:justify-between text-center"
           variants={textVariants}
         >
-          <p className="font-playfair font-semibold text-2xl text-white">
+          <p className="m-7 font-playfair font-semibold text-2xl text-white">
             ANDRIEL JOSÉ
           </p>
           <p className="font-playfair text-xl text-white">
