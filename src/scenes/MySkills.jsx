@@ -41,7 +41,7 @@ const MySkills = () => {
           </p> */}
           <AnimatedText
             text="I am a skilled full-stack web developer with experience in building responsive and user-friendly websites. I have a strong command of JavaScript, React, Node.js, and Express, as well as experience with databases like PostgreSQL and MongoDB. I have developed multiple web applications, including a social media platform, admin dashboards and an e-commerce website. I am always eager to learn and stay up-to-date with the latest web development trends and technologies."
-            className="text-black-text dark:text-white font-medium mt-10 mb-7 text-sm xs:text-md sm:text-lg md:text-xl  text-center md:text-start"
+            className="text-black-text dark:text-gray-300 font-medium mt-10 mb-7 text-sm xs:text-md sm:text-lg md:text-xl  text-center md:text-start"
           />
           <ParticlesComponent />
         </motion.div>
