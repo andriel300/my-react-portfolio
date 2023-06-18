@@ -54,9 +54,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "gradient-rainbow":
           "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
+        "gradient-blueing": "linear-gradient(90deg, #4481eb 10%, #04befe 90%)",
         "gradient-rainblue":
           "linear-gradient(68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2%)",
-        "gradient-blueing": "linear-gradient(90deg, #4481eb 10%, #04befe 90%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
