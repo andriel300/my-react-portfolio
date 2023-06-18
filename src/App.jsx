@@ -42,7 +42,6 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </div>
       </div>
-      <LineGradient />
       <div className="bg-background dark:bg-dark">
         <div className="w-5/6 mx-auto ">
           <MySkills />
