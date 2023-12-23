@@ -2,7 +2,6 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import SkillsIcons from "../components/SkillsIcons";
-import ParticlesComponent from "../components/Particles";
 import AnimatedText from "../components/AnimatedText";
 
 const MySkills = () => {
@@ -40,10 +39,9 @@ const MySkills = () => {
             up-to-date with the latest web development trends and technologies.
           </p> */}
           <AnimatedText
-            text="I am a skilled full-stack web developer with experience in building responsive and user-friendly websites. I have a strong command of JavaScript, React, Node.js, and Express, as well as experience with databases like PostgreSQL and MongoDB. I have developed multiple web applications, including a social media platform, admin dashboards and an e-commerce website. I am always eager to learn and stay up-to-date with the latest web development trends and technologies."
+            text="Sou um analista de dados habilidoso com experiência na análise e interpretação de conjuntos de dados complexos. Possuo profundo conhecimento em ferramentas analíticas e linguagens como SQL e Python, além de experiência em manipulação e modelagem de dados. Trabalhei em projetos que envolvem análise financeira, logística, recursos humanos e construção de dashboards interativos. Estou comprometido em aplicar minha experiência analítica para extrair insights significativos e impulsionar a tomada de decisões informadas."
             className="text-black-text dark:text-gray-300 font-medium mt-10 mb-7 text-sm xs:text-md sm:text-lg md:text-xl  text-center md:text-start"
           />
-          <ParticlesComponent />
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isDesktop ? (

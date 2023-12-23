@@ -24,30 +24,6 @@ const SocialMediaIcons = ({ isLanding }) => {
         <BsLinkedin size={30} />
       </SocialMediaIconLink>
       <SocialMediaIconLink
-        href="https://www.twitter.com/andriel_j"
-        target="_blank"
-        rel="noreferrer"
-        isLanding={isLanding}
-      >
-        <BsTwitter size={30} />
-      </SocialMediaIconLink>
-      <SocialMediaIconLink
-        href="https://www.facebook.com/andriel300"
-        target="_blank"
-        rel="noreferrer"
-        isLanding={isLanding}
-      >
-        <BsFacebook size={30} />
-      </SocialMediaIconLink>
-      <SocialMediaIconLink
-        href="https://www.instagram.com/andriel.j30"
-        target="_blank"
-        rel="noreferrer"
-        isLanding={isLanding}
-      >
-        <BsInstagram size={30} />
-      </SocialMediaIconLink>
-      <SocialMediaIconLink
         href="https://www.github.com/andriel300"
         target="_blank"
         rel="noreferrer"
